@@ -1,0 +1,45 @@
+@import "./fonts";
+@import "./colors";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: $alt-color;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $accent;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff9e00;
+}
+
+body {
+  min-width: 320px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.65;
+  color: $light;
+  font-family: $default;
+}
+
+.content {
+  max-width: calc(1139px + 2em);
+  width: 100%;
+  padding: 0 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@import "./typography";
+@import "./layout/header";
+@import "./components/nav";
+@import "./components/about";
+@import "./components/feachers";
